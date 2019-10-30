@@ -1,6 +1,6 @@
-docker build -t starnes22/multi-client:latest -t starnes22/mult-client:$SHA -f ./client/Dockerfile ./client
-docker build -t starnes22/multi-server:latest -t starnes22/mult-server:$SHA -f ./server/Dockerfile ./server
-docker build -t starnes22/multi-worker:latest -t starnes22/mult-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t starnes22/multi-client:latest -t starnes22/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t starnes22/multi-server:latest -t starnes22/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t starnes22/multi-worker:latest -t starnes22/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push starnes22/multi-client:latest
 docker push starnes22/multi-server:latest
